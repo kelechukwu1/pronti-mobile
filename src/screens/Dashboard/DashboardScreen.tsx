@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import {
+  Alert,
   FlatList,
   RefreshControl,
   StyleSheet,
@@ -80,8 +81,21 @@ export function DashboardScreen() {
   );
 
   const handleLogout = useCallback(() => {
-    clearToken();
-    dispatch(logout());
+    Alert.alert(
+      "Log Out",
+      "Are you sure you want to log out?",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Log Out",
+          style: "destructive",
+          onPress: () => {
+            clearToken();
+            dispatch(logout());
+          },
+        },
+      ],
+    );
   }, [dispatch]);
 
   const renderItem = useCallback(

@@ -170,8 +170,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   name: {
-    minHeight: 42,
-    // marginBottom: 8,
+    minHeight: 30,
   },
   footer: {
     flexDirection: "row",
