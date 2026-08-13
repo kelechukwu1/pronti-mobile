@@ -1,0 +1,14 @@
+export interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+}
+
+export interface CartTotals {
+  subtotal: number;
+  tax: number;
+  total: number;
+  itemCount: number;
+}
