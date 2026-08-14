@@ -24,7 +24,7 @@ A performant e-commerce mobile application built with **React Native CLI**, **Re
 
 | Parameter                     | Value / Format                                                     | Note                                      |
 | :---------------------------- | :----------------------------------------------------------------- | :---------------------------------------- |
-| **Estimated Completion Time** | **14 hours**                                                       | Expected total development effort         |
+| **Estimated Completion Time** | **8 hours**                                                        | Expected total development effort         |
 | **Phone Number**              | Any valid 10-digit number (e.g., `1234567890` or `(123) 456-7890`) | Accepts standard 10-digit phone inputs    |
 | **Demo OTP Code**             | `123456`                                                           |
 | **Invalid OTP**               | Any other 6-digit code                                             | Triggers simulated authentication failure |
@@ -107,5 +107,5 @@ npm test
 ## ⚠️ Known Limitations
 
 1. **Mock Backend**: The app uses simulated GraphQL responses and mock delays rather than a live REST/GraphQL backend API.
-2. **Mock OTP**: No real SMS provider (e.g., Twilio) is connected; OTP verification uses the static code `123456`.
+2. **Mock OTP**: No real SMS provider is connected; OTP verification uses the static code `123456`.
 3. **Simulated Failure Rate**: Order placement simulates a 10% network failure rate for testing error-handling resilience.
